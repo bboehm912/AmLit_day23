@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English 11: American Literature | Day 23: Seminar Session: Bridging Faith and Enlightenment</title>
+  <style>
+:root {
+  --primary: #15803d;
+  --primary-dark: #166534;
+  --primary-light: #f0fdf4;
+  --bg-main: #f8fafc;
+  --card-bg: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --border: #cbd5e1;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-main);
+  margin: 0;
+  padding: 20px;
+  color: var(--text-dark);
+}
+
+.container { max-width: 980px; margin: 0 auto; }
+
+.header-card {
+  background: var(--card-bg);
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  border-top: 5px solid var(--primary);
+}
+
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.header-left { display: flex; align-items: center; gap: 18px; }
+.logo-box { width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; }
+.logo-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.stamp-container { width: 110px; height: 110px; position: relative; }
+.stamp-photo {
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 60px; height: 60px;
+  border-radius: 50%; object-fit: cover;
+  z-index: 1;
+}
+.stamp-svg {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.nav-tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+.tab-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 0.95em;
+  cursor: pointer;
+  color: #334155;
+}
+.tab-btn.active { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.bellringer-box {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary);
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deck-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.std-badge {
+  background: #dcfce7;
+  color: var(--primary-dark);
+  font-size: 0.78em;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #bbf7d0;
+}
+
+.slide-stage {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  min-height: 440px;
+}
+
+.slide { display: none; }
+.slide.active { display: block; }
+
+.slide-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.slide-visual-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.callout-box {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background: #f0fdf4;
+  border-left: 4px solid var(--primary);
+}
+
+.deck-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.ctrl-btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ctrl-btn:disabled { background: #94a3b8; }
+
+.resource-card {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkpoint-intro { margin: 8px 0 20px; color: var(--text-muted); line-height: 1.55; }
+.checkpoint-progress {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 18px 0 24px;
+}
+.progress-copy { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 9px; font-size: 0.92em; }
+.progress-copy strong { color: var(--primary-dark); }
+.progress-track { height: 9px; overflow: hidden; border-radius: 99px; background: #e2e8f0; }
+.progress-fill { width: 0; height: 100%; background: var(--primary); border-radius: inherit; transition: width 180ms ease; }
+.form-group {
+  margin: 0 0 18px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dbe4ee;
+  border-left: 4px solid #86c99b;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.035);
+}
+.form-group.answered { border-left-color: var(--primary); }
+.question-heading { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.question-number {
+  display: inline-flex;
+  flex: 0 0 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-size: 0.86em;
+  font-weight: 700;
+}
+.question-title { margin: 2px 0 0; line-height: 1.45; font-size: 1.02em; }
+.required-note { margin-left: 5px; color: #b42318; font-size: 0.8em; font-weight: 600; }
+.field-hint { margin: -5px 0 12px 42px; color: var(--text-muted); font-size: 0.88em; line-height: 1.45; }
+.answer-area { margin-left: 42px; }
+.answer-control {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #b8c5d3;
+  border-radius: 7px;
+  background: #ffffff;
+  color: var(--text-dark);
+  font: inherit;
+}
+.answer-control:focus { outline: 3px solid rgba(21, 128, 61, 0.18); border-color: var(--primary); }
+textarea.answer-control { min-height: 120px; resize: vertical; line-height: 1.55; }
+.writing-prompt textarea.answer-control { min-height: 155px; }
+.choice-list { display: grid; gap: 9px; }
+.choice-list--binary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.choice-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 13px;
+  border: 1px solid #dbe4ee;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.45;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+.choice-option:hover { border-color: #86c99b; background: #f7fcf8; }
+.choice-option.selected { border-color: var(--primary); background: var(--primary-light); }
+.choice-option input { flex: 0 0 auto; width: auto; margin: 3px 0 0; accent-color: var(--primary); }
+.response-meta { display: flex; justify-content: space-between; gap: 8px; margin-top: 7px; color: var(--text-muted); font-size: 0.8em; }
+.response-meta .word-count { font-variant-numeric: tabular-nums; }
+.scale-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.scale-row .choice-option { flex-direction: column; align-items: center; text-align: center; padding: 10px 6px; }
+.scale-row .choice-option input { margin: 0 0 4px; }
+.scale-ends { display: flex; justify-content: space-between; margin-top: 6px; color: var(--text-muted); font-size: 0.82em; }
+.match-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: center; margin-bottom: 10px; }
+.match-term { font-weight: 600; line-height: 1.4; }
+.followup-label { margin: 14px 0 6px; font-weight: 700; }
+@media (max-width: 640px) { .match-row { grid-template-columns: 1fr; gap: 4px; } .scale-row { grid-template-columns: 1fr; } }
+.standard-panel { margin-bottom: 16px; padding: 16px; border: 1px solid #bbf7d0; border-radius: 10px; background: var(--primary-light); }
+.standard-panel .std-badge { display: inline-block; margin-bottom: 8px; }
+.standard-panel .i-can { margin: 0 0 10px; font-weight: 600; line-height: 1.5; }
+.standard-panel ul { margin: 6px 0 0; padding-left: 20px; line-height: 1.5; }
+.standard-panel .panel-label { margin: 0; color: var(--primary-dark); font-size: 0.8em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.level-title { display: block; font-weight: 700; }
+.level-desc { display: block; color: var(--text-muted); font-size: 0.92em; }
+.evidence-label { margin: 16px 0 6px; font-weight: 700; }
+.resource-tag { display: inline-block; margin-bottom: 4px; padding: 2px 8px; border-radius: 99px; background: #dcfce7; color: var(--primary-dark); font-size: 0.72em; font-weight: 700; }
+.resource-card.has-detail { display: block; }
+.resource-card.has-detail summary { cursor: pointer; font-weight: 700; }
+.gen-table { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 0.92em; }
+.gen-table th, .gen-table td { padding: 8px 10px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+.gen-table th { background: var(--primary-light); }
+.gen-note { color: var(--text-muted); font-style: italic; }
+.gen-list { line-height: 1.6; padding-left: 20px; }
+.checkpoint-actions { margin-top: 24px; }
+.print-note { margin: 10px 0 0; text-align: center; color: var(--text-muted); font-size: 0.86em; }
+@media (max-width: 640px) {
+  .form-group { padding: 16px 13px; }
+  .answer-area { margin-left: 0; }
+  .field-hint { margin-left: 0; }
+}
+@media print {
+  body { padding: 0; background: #ffffff; }
+  .container { max-width: none; }
+  .header-card, .nav-tabs, #deck-tab, #res-tab, .checkpoint-progress, .checkpoint-actions { display: none !important; }
+  #form-tab { display: block !important; margin: 0; padding: 0; box-shadow: none; }
+  #form-tab > h3 { margin-top: 0; }
+  .form-group { break-inside: avoid; box-shadow: none; border-color: #aab4bf; }
+  .answer-control { border-color: #7c8794; }
+  textarea.answer-control { min-height: 90px; }
+}
+
+.submit-btn {
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  padding: 14px;
+  font-size: 1.05em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.muted { color: var(--text-muted); }
+.italic { font-style: italic; }
+.subtitle { color: var(--text-muted); }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header-card">
+    <div class="header-flex">
+      <div class="header-left">
+        <div class="logo-box">
+          <img src="chisholm_logo.png" alt="Chisholm Logo" onerror="this.style.display='none'" />
+        </div>
+        <div>
+          <h2>English 11: American Literature</h2>
+          <p class="subtitle">Day 23: Seminar Session: Bridging Faith and Enlightenment</p>
+        </div>
+      </div>
+
+      <div class="stamp-container">
+        <img class="stamp-photo" src="boehm_photo.jpg" alt="Instructor Photo" onerror="this.style.display='none'" />
+        <img class="stamp-svg" src="boehm-stamp.svg" alt="Classroom Stamp" onerror="this.style.display='none'" />
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('deck')">Deck</button>
+    <button class="tab-btn" onclick="switchTab('res')">Resource Hub</button>
+    <button class="tab-btn" onclick="switchTab('form')">Student Work Checkpoint</button>
+  </div>
+
+  <!-- TAB: DECK -->
+  <div id="deck-tab" class="card tab-content active">
+    <div class="bellringer-box">
+      <div>
+        <strong>Daily Bellringer Writing Prompt</strong>
+        <p id="bellringer-display" class="italic">Loading prompt...</p>
+      </div>
+      <button class="ctrl-btn" onclick="randomizeBellringer()">Shuffle</button>
+    </div>
+
+    <div class="deck-header">
+      <h3>Unit 5: The Voice of Revolution</h3>
+      <span id="slide-tracker" class="std-badge">Slide 1 of 12</span>
+    </div>
+
+    <div id="slide-stage" class="slide-stage">
+      <!-- Slides injected by script.js -->
+    </div>
+
+    <div class="deck-controls">
+      <button class="ctrl-btn" id="prev-btn" onclick="moveSlide(-1)" disabled>Previous</button>
+      <button class="ctrl-btn" id="next-btn" onclick="moveSlide(1)">Next</button>
+    </div>
+  </div>
+
+  <!-- TAB: RESOURCE HUB -->
+  <div id="res-tab" class="card tab-content">
+    <h3>Lesson Resource & Reference Hub</h3>
+    <p class="muted">Access official course references below.</p>
+    <div id="resource-list">
+      <!-- Resources injected by script.js -->
+    </div>
+  </div>
+
+  <!-- TAB: STUDENT WORK CHECKPOINT -->
+  <div id="form-tab" class="card tab-content">
+    <h3>Student Work Checkpoint & Reflection</h3>
+    <p class="checkpoint-intro">Show what you understand so far. Choose an answer, mark every option that applies, or write in your own words. Your progress updates as you work on this page.</p>
+    <div class="checkpoint-progress" id="checkpoint-progress" aria-live="polite">
+      <div class="progress-copy"><strong id="progress-label">0 of 0 answered</strong><span id="progress-message">Start anywhere</span></div>
+      <div class="progress-track" role="progressbar" aria-label="Checkpoint completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+    <form id="checkpoint-form" onsubmit="event.preventDefault(); window.print();">
+      <!-- Dynamic form fields injected by script.js -->
+      <div class="checkpoint-actions">
+        <button type="submit" class="submit-btn">Print checkpoint</button>
+        <p class="print-note">Review your responses, then print and turn in to the Red Basket.</p>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<script>
+let currentSlide = 1;
+let totalSlides = 1;
+let bellringers = [];
+
+// Stock image pool for default visual slides
+const stockImagePool = [
+  'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=300&q=80', // Turtle / Nature
+  'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=300&q=80', // Water / Earth-Diver
+  'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=300&q=80', // Ecology / Forest
+  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=300&q=80', // Campfire / Orality
+  'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=300&q=80', // Literature / History
+  'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=300&q=80'  // Writing Workshop
+];
+
+// Emoji fallback pool
+const iconPool = ['🐢', '🌊', '🌱', '🗣️', '☯️', '📝'];
+
+function renderSlides(slides) {
+  const stage = document.getElementById('slide-stage');
+  stage.innerHTML = '';
+
+  slides.forEach((slide, index) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'slide' + (index === 0 ? ' active' : '');
+    wrapper.id = `slide-${index + 1}`;
+
+    // Priority 1: slide.image OR Stock Web Image
+    const imageUrl = slide.image || stockImagePool[index % stockImagePool.length];
+    // Fallback: slide.icon OR Emoji Pool
+    const fallbackEmoji = slide.icon || iconPool[index % iconPool.length];
+
+    const visualMediaHTML = `
+      <img src="${imageUrl}" 
+           alt="${slide.title}" 
+           style="width:110px;height:110px;object-fit:cover;border-radius:50%;border:3px solid var(--primary);" 
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span style="font-size: 2.8em; display: none; margin-bottom: 8px;">${fallbackEmoji}</span>
+    `;
+
+    wrapper.innerHTML = `
+      <div class="slide-header">
+        <h3 class="slide-title">${slide.title}</h3>
+        <span class="std-badge">${slide.standard || ''}</span>
+      </div>
+      <div class="slide-grid">
+        <div class="slide-body">
+          <ul>
+            ${(slide.bullets || []).map(b => `<li>${b}</li>`).join('')}
+          </ul>
+          ${slide.callout ? `<div class="callout-box"><strong style="color: var(--primary-dark);">Key Takeaway:</strong> ${slide.callout}</div>` : ''}
+        </div>
+        <div class="slide-visual-card">
+          ${visualMediaHTML}
+          ${slide.visual_caption ? `<small style="color: var(--text-muted); display: block; font-size: 0.82em; margin-top: 6px;">${slide.visual_caption}</small>` : ''}
+        </div>
+      </div>
+    `;
+    stage.appendChild(wrapper);
+  });
+}
+function initLesson(data) {
+  bellringers = data.bellringers || [];
+  totalSlides = (data.slides || []).length || 1;
+
+  document.getElementById('slide-tracker').innerText = `Slide 1 of ${totalSlides}`;
+
+  renderSlides(data.slides || []);
+  renderResources(data.resources || []);
+  renderForm(data.form || []);
+
+  randomizeBellringer();
+}
+
+function randomizeBellringer() {
+  if (!bellringers.length) return;
+  const idx = Math.floor(Math.random() * bellringers.length);
+  document.getElementById('bellringer-display').innerText = bellringers[idx];
+}
+
+function moveSlide(dir) {
+  const newSlide = currentSlide + dir;
+  if (newSlide < 1 || newSlide > totalSlides) return;
+
+  document.getElementById(`slide-${currentSlide}`).classList.remove('active');
+  currentSlide = newSlide;
+  document.getElementById(`slide-${currentSlide}`).classList.add('active');
+
+  document.getElementById('slide-tracker').innerText = `Slide ${currentSlide} of ${totalSlides}`;
+  document.getElementById('prev-btn').disabled = currentSlide === 1;
+  document.getElementById('next-btn').disabled = currentSlide === totalSlides;
+}
+
+function renderResources(resources) {
+  const container = document.getElementById('resource-list');
+  container.innerHTML = '';
+
+  let resourceList = [];
+
+  if (Array.isArray(resources)) {
+    resourceList = resources;
+  } else if (resources && typeof resources === 'object') {
+    if (Array.isArray(resources.buttons)) {
+      resourceList = resources.buttons;
+    } else if (Array.isArray(resources.files)) {
+      resourceList = resources.files;
+    } else if (Array.isArray(resources.items)) {
+      resourceList = resources.items;
+    } else if (resources.file || resources.link || resources.url) {
+      resourceList = [resources];
+    }
+  }
+
+  if (!resourceList.length && resources && typeof resources === 'object' && resources.title && (resources.file || resources.link || resources.url)) {
+    resourceList = [resources];
+  }
+
+  resourceList.forEach(res => {
+    const card = document.createElement('div');
+    card.className = 'resource-card';
+
+    if (typeof res === 'string') {
+      const cleanText = res.trim();
+      const isFile = /\.(pdf|docx?|pptx?|xlsx?)$/i.test(cleanText);
+      if (!isFile) return;
+
+      const label = cleanText.split('/').pop();
+      card.innerHTML = `
+        <div>
+          <strong>${label}</strong><br/>
+          <small>Repository file</small>
+        </div>
+        <a href="${cleanText}" target="_blank" rel="noopener noreferrer" class="ctrl-btn">Open Resource</a>
+      `;
+      container.appendChild(card);
+      return;
+    }
+
+    const resourceUrl = res.file || res.link || res.url || res.href || '#';
+    const resourceTitle = res.title || res.name || res.label || 'Resource Item';
+    const resourceDescription = res.description || res.summary || '';
+    const fileName = resourceUrl && typeof resourceUrl === 'string' ? resourceUrl.split('/').pop() : '';
+
+    if (res.html) {
+      card.classList.add('has-detail');
+      card.innerHTML = `
+        ${res.tag ? `<span class="resource-tag">${res.tag}</span>` : ''}
+        <details>
+          <summary>${resourceTitle}</summary>
+          <p class="muted">${resourceDescription}</p>
+          ${res.html}
+        </details>
+      `;
+      container.appendChild(card);
+      return;
+    }
+
+    card.innerHTML = `
+      <div>
+        ${res.tag ? `<span class="resource-tag">${res.tag}</span><br/>` : ''}
+        <strong>${resourceTitle || fileName || 'Resource Item'}</strong><br/>
+        <small>${resourceDescription}</small>
+      </div>
+      ${resourceUrl && resourceUrl !== '#' ? `<a href="${resourceUrl}" target="_blank" rel="noopener noreferrer" class="ctrl-btn">Open Resource</a>` : ''}
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderForm(fields) {
+  const form = document.getElementById('checkpoint-form');
+  const actions = form.querySelector('.checkpoint-actions');
+  form.innerHTML = '';
+
+  const fieldList = Array.isArray(fields) ? fields : [];
+
+  fieldList.forEach((field, index) => {
+    const group = document.createElement('div');
+    group.className = 'form-group';
+    const label = field.label || field.prompt || `Question ${index + 1}`;
+    const id = `field_${(field.field_id || index + 1).toString().replace(/\s+/g, '_').toLowerCase()}`;
+    const heading = document.createElement('div');
+    heading.className = 'question-heading';
+    const number = document.createElement('span');
+    number.className = 'question-number';
+    number.textContent = String(index + 1);
+    number.setAttribute('aria-hidden', 'true');
+    const title = document.createElement('h4');
+    title.className = 'question-title';
+    title.id = `${id}_label`;
+    title.textContent = label;
+    if (field.required) {
+      const required = document.createElement('span');
+      required.className = 'required-note';
+      required.textContent = 'Required';
+      title.appendChild(required);
+    }
+    heading.append(number, title);
+    group.appendChild(heading);
+
+    const hintText = field.help_text || field.hint || (field.type === 'multiple_choice' ? 'Choose one answer.' :
+      field.type === 'self_assessment' ? 'Read the standard, then choose the level that honestly matches what you can do right now.' :
+      ['checkbox', 'checkbox_group', 'multi_select'].includes(field.type) ? 'Select ALL answers that apply.' :
+      field.type === 'matching' ? 'Use the dropdown beside each item to choose its best match.' :
+      field.type === 'rating_scale' ? 'Choose the number that best describes you.' :
+      field.type === 'true_false' ? 'Select true or false.' :
+      ['short_answer', 'short_text', 'text', 'long_text', 'quote_citation', 'reflection'].includes(field.type) ? 'Write a response in your own words.' : '');
+    if (hintText) {
+      const hint = document.createElement('p');
+      hint.className = 'field-hint';
+      hint.textContent = hintText;
+      group.appendChild(hint);
+    }
+
+    const answerArea = document.createElement('div');
+    answerArea.className = 'answer-area';
+    const options = field.type === 'true_false' ? ['True', 'False'] : (Array.isArray(field.options) ? field.options : []);
+    const required = Boolean(field.required);
+
+    if (field.type === 'self_assessment') {
+      const panel = document.createElement('div');
+      panel.className = 'standard-panel';
+      const badge = document.createElement('span');
+      badge.className = 'std-badge';
+      badge.textContent = `Standard ${field.standard}${field.standard_title ? ': ' + field.standard_title : ''}`;
+      const iCan = document.createElement('p');
+      iCan.className = 'i-can';
+      iCan.textContent = field.i_can || '';
+      panel.append(badge, iCan);
+      if (Array.isArray(field.look_fors) && field.look_fors.length) {
+        const lookLabel = document.createElement('p');
+        lookLabel.className = 'panel-label';
+        lookLabel.textContent = 'Mastery looks like';
+        const ul = document.createElement('ul');
+        field.look_fors.forEach(text => {
+          const li = document.createElement('li');
+          li.textContent = text;
+          ul.appendChild(li);
+        });
+        panel.append(lookLabel, ul);
+      }
+      answerArea.appendChild(panel);
+
+      const list = document.createElement('div');
+      list.className = 'choice-list';
+      list.setAttribute('role', 'radiogroup');
+      list.setAttribute('aria-labelledby', title.id);
+      (field.levels || []).forEach(level => {
+        const choice = document.createElement('label');
+        choice.className = 'choice-option';
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = id;
+        input.value = level.title;
+        input.required = required;
+        const text = document.createElement('span');
+        const levelTitle = document.createElement('span');
+        levelTitle.className = 'level-title';
+        levelTitle.textContent = level.title;
+        const levelDesc = document.createElement('span');
+        levelDesc.className = 'level-desc';
+        levelDesc.textContent = level.desc;
+        text.append(levelTitle, levelDesc);
+        choice.append(input, text);
+        list.appendChild(choice);
+      });
+      answerArea.appendChild(list);
+
+      const evidenceLabel = document.createElement('p');
+      evidenceLabel.className = 'evidence-label';
+      evidenceLabel.id = `${id}_evidence_label`;
+      evidenceLabel.textContent = field.prompt || 'Show your evidence';
+      const evidence = document.createElement('textarea');
+      evidence.className = 'answer-control';
+      evidence.id = `${id}_evidence`;
+      evidence.name = `${id}_evidence`;
+      evidence.rows = 4;
+      evidence.setAttribute('aria-labelledby', evidenceLabel.id);
+      evidence.placeholder = 'Explain your level with a specific example…';
+      answerArea.append(evidenceLabel, evidence);
+      if (field.evidence_hint) {
+        const meta = document.createElement('div');
+        meta.className = 'response-meta';
+        meta.textContent = field.evidence_hint;
+        answerArea.appendChild(meta);
+      }
+    } else if (['multiple_choice', 'true_false', 'checkbox', 'checkbox_group', 'multi_select'].includes(field.type)) {
+      const list = document.createElement('div');
+      list.className = 'choice-list';
+      list.setAttribute('role', 'group');
+      list.setAttribute('aria-labelledby', title.id);
+      if (field.type === 'true_false') list.classList.add('choice-list--binary');
+      options.forEach((option, optionIndex) => {
+        const choice = document.createElement('label');
+        choice.className = 'choice-option';
+        const input = document.createElement('input');
+        const multiple = ['checkbox', 'checkbox_group', 'multi_select'].includes(field.type);
+        input.type = multiple ? 'checkbox' : 'radio';
+        input.name = multiple ? `${id}_${optionIndex}` : id;
+        input.value = option;
+        input.required = required && !multiple;
+        choice.append(input, document.createTextNode(option));
+        list.appendChild(choice);
+      });
+      answerArea.appendChild(list);
+    } else if (field.type === 'matching') {
+      (field.pairs || []).forEach((pair, pairIndex) => {
+        const row = document.createElement('div');
+        row.className = 'match-row';
+        const term = document.createElement('span');
+        term.className = 'match-term';
+        term.id = `${id}_term_${pairIndex}`;
+        term.textContent = pair.term;
+        const select = document.createElement('select');
+        select.className = 'answer-control';
+        select.id = `${id}_${pairIndex}`;
+        select.setAttribute('aria-labelledby', term.id);
+        select.required = required;
+        const placeholder = document.createElement('option');
+        placeholder.value = '';
+        placeholder.textContent = 'Choose a match…';
+        placeholder.disabled = true;
+        placeholder.selected = true;
+        select.appendChild(placeholder);
+        (field.choices || []).forEach(choice => {
+          const item = document.createElement('option');
+          item.value = choice;
+          item.textContent = choice;
+          select.appendChild(item);
+        });
+        row.append(term, select);
+        answerArea.appendChild(row);
+      });
+    } else if (field.type === 'rating_scale' && options.length && options.length <= 5) {
+      const list = document.createElement('div');
+      list.className = 'choice-list scale-row';
+      list.setAttribute('role', 'radiogroup');
+      list.setAttribute('aria-labelledby', title.id);
+      options.forEach(option => {
+        const choice = document.createElement('label');
+        choice.className = 'choice-option';
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = id;
+        input.value = option;
+        input.required = required;
+        choice.append(input, document.createTextNode(option));
+        list.appendChild(choice);
+      });
+      answerArea.appendChild(list);
+      if (field.scale_low || field.scale_high) {
+        const ends = document.createElement('div');
+        ends.className = 'scale-ends';
+        const low = document.createElement('span');
+        low.textContent = field.scale_low || '';
+        const high = document.createElement('span');
+        high.textContent = field.scale_high || '';
+        ends.append(low, high);
+        answerArea.appendChild(ends);
+      }
+    } else if (['rating_scale', 'select_rubric'].includes(field.type)) {
+      const select = document.createElement('select');
+      select.className = 'answer-control';
+      select.id = id;
+      select.setAttribute('aria-labelledby', title.id);
+      select.required = required;
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = field.type === 'select_rubric' ? 'Choose a benchmark level' : 'Choose an answer';
+      placeholder.disabled = true;
+      placeholder.selected = true;
+      select.appendChild(placeholder);
+      options.forEach(option => {
+        const item = document.createElement('option');
+        item.value = option;
+        item.textContent = option;
+        select.appendChild(item);
+      });
+      answerArea.appendChild(select);
+    } else if (['short_answer', 'short_text', 'text', 'long_text', 'quote_citation', 'reflection'].includes(field.type)) {
+      const textarea = document.createElement('textarea');
+      textarea.className = 'answer-control';
+      textarea.id = id;
+      textarea.name = id;
+      textarea.setAttribute('aria-labelledby', title.id);
+      textarea.required = required;
+      textarea.placeholder = field.placeholder || (field.type === 'short_answer' || field.type === 'short_text' || field.type === 'text' ? 'Type your response here…' : 'Develop your response here…');
+      if (['long_text', 'quote_citation', 'reflection'].includes(field.type)) {
+        group.classList.add('writing-prompt');
+      } else {
+        textarea.rows = 3;
+      }
+      answerArea.appendChild(textarea);
+      const meta = document.createElement('div');
+      meta.className = 'response-meta';
+      const guidance = document.createElement('span');
+      guidance.textContent = field.type === 'quote_citation' ? 'Include a specific detail or quotation when you can.' : 'A complete thought is a good place to start.';
+      const count = document.createElement('span');
+      count.className = 'word-count';
+      count.textContent = '0 words';
+      meta.append(guidance, count);
+      answerArea.appendChild(meta);
+      textarea.addEventListener('input', () => {
+        const wordCount = textarea.value.trim() ? textarea.value.trim().split(/\s+/).length : 0;
+        count.textContent = `${wordCount} ${wordCount === 1 ? 'word' : 'words'}`;
+      });
+    } else if (field.type === 'date') {
+      const input = document.createElement('input');
+      input.className = 'answer-control';
+      input.type = 'date';
+      input.id = id;
+      input.name = id;
+      input.setAttribute('aria-labelledby', title.id);
+      input.required = required;
+      answerArea.appendChild(input);
+    } else {
+      const input = document.createElement('input');
+      input.className = 'answer-control';
+      input.type = 'text';
+      input.id = id;
+      input.name = id;
+      input.setAttribute('aria-labelledby', title.id);
+      input.required = required;
+      input.placeholder = field.placeholder || 'Type your response here…';
+      answerArea.appendChild(input);
+    }
+
+    if (field.explain_prompt) {
+      const followLabel = document.createElement('p');
+      followLabel.className = 'followup-label';
+      followLabel.id = `${id}_follow_label`;
+      followLabel.textContent = field.explain_prompt;
+      const follow = document.createElement('textarea');
+      follow.className = 'answer-control';
+      follow.id = `${id}_follow`;
+      follow.name = `${id}_follow`;
+      follow.rows = 3;
+      follow.setAttribute('aria-labelledby', followLabel.id);
+      follow.placeholder = field.explain_placeholder || 'Explain your thinking…';
+      answerArea.append(followLabel, follow);
+    }
+
+    group.appendChild(answerArea);
+    form.appendChild(group);
+  });
+
+  if (actions) form.appendChild(actions);
+  form.oninput = updateCheckpointProgress;
+  form.onchange = updateCheckpointProgress;
+  updateCheckpointProgress();
+}
+
+function updateCheckpointProgress() {
+  const form = document.getElementById('checkpoint-form');
+  const groups = Array.from(form.querySelectorAll('.form-group'));
+  const answered = groups.filter(group => {
+    const controls = Array.from(group.querySelectorAll('input, textarea, select'));
+    return controls.some(control => control.type === 'checkbox' || control.type === 'radio' ? control.checked : Boolean(control.value.trim()));
+  }).length;
+  const percent = groups.length ? Math.round((answered / groups.length) * 100) : 0;
+  document.getElementById('progress-label').textContent = `${answered} of ${groups.length} answered`;
+  document.getElementById('progress-message').textContent = percent === 100 ? 'Ready to print!' : answered ? 'Keep going—you’re making progress.' : 'Start anywhere';
+  document.getElementById('progress-fill').style.width = `${percent}%`;
+  document.querySelector('.progress-track').setAttribute('aria-valuenow', String(percent));
+  groups.forEach(group => {
+    group.querySelectorAll('.choice-option').forEach(choice => {
+      const input = choice.querySelector('input');
+      choice.classList.toggle('selected', input.checked);
+    });
+    const hasAnswer = Array.from(group.querySelectorAll('input, textarea, select')).some(control =>
+      control.type === 'checkbox' || control.type === 'radio' ? control.checked : Boolean(control.value.trim()));
+    group.classList.toggle('answered', hasAnswer);
+  });
+}
+
+function switchTab(key) {
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+
+  if (key === 'deck') {
+    document.querySelectorAll('.tab-btn')[0].classList.add('active');
+    document.getElementById('deck-tab').classList.add('active');
+  } else if (key === 'res') {
+    document.querySelectorAll('.tab-btn')[1].classList.add('active');
+    document.getElementById('res-tab').classList.add('active');
+  } else if (key === 'form') {
+    document.querySelectorAll('.tab-btn')[2].classList.add('active');
+    document.getElementById('form-tab').classList.add('active');
+  }
+}
+window.addEventListener('DOMContentLoaded', () => initLesson({"day": 23, "date": "Oct 2 (Friday)", "course": "English 11: American Literature", "unit": "Unit 5: The Voice of Revolution", "topic": "Seminar Session: Bridging Faith and Enlightenment", "primary_focus": "Engaging in Socratic discussion regarding the conceptual journey from Puritan theology to democratic ideals.", "core_objectives": ["Facilitating student-led comparative analysis connecting thematic units across the first five weeks."], "standards": ["11.1.6.2", "11.1.6.3"], "bellringers": ["How did Puritan concepts of 'covenant' lay the groundwork for democratic social contracts?", "In what ways did the journey from Faith to Enlightenment reshape American literary identity?", "What was the most important lesson learned across Units 1 through 5 about voice and freedom?", "State your primary thesis for today's discussion. What claim will you defend, and which text supports it?"], "slides": [
+{"title": "Socratic Seminar: Bridging Faith and Enlightenment", "standard": "11.1.6.2", "bullets": ["Welcome to our Week 5 synthesis Socratic Seminar on Unit 5 themes.", "Goal: Student-led analysis connecting Puritan theology to Enlightenment democracy.", "Use the Seminar Toolkit in the Resource Hub for sentence starters, question stems, and role reminders."], "callout": "Student voices drive inquiry as we synthesize five weeks of American literary evolution."},
+{"title": "Seminar Protocols and Expectations", "standard": "11.1.6.2", "bullets": ["Speak with evidence: ground every claim in the studied texts and your notes.", "Listen actively: build upon, challenge, or refine peer contributions respectfully.", "Maintain open-ended inquiry: explore underlying concepts rather than seeking quick answers."], "callout": "Collegial, evidence-based dialogue is the foundation of democratic discourse."},
+{"title": "Theme 1: The Evolution of Authority", "standard": "11.1.6.3", "bullets": ["How did colonial authority shift from divine right to government by consent?", "Examine texts from Winthrop's 'City Upon a Hill' to Revolutionary declarations.", "Discuss how religious covenants prefigured constitutional social contracts."], "callout": "The covenant idea evolved into the constitutional concept of consent of the governed."},
+{"title": "Theme 2: Hysteria, Power, and Conscience", "standard": "11.1.6.3", "bullets": ["Analyze how hysteria in Salem revealed the vulnerabilities of dogmatic power.", "Discuss character actions from The Crucible regarding moral conscience vs. compliance.", "How did colonial failures inspire explicit constitutional protections for individuals?"], "callout": "Protecting individual conscience requires institutional checks on absolute authority."},
+{"title": "Theme 3: The Transformation of Public Rhetoric", "standard": "11.1.6.2", "bullets": ["Contrast Jonathan Edwards's brimstone sermons with Patrick Henry's political speeches.", "Evaluate how rhetorical tools shifted from spiritual fear to logical argumentation.", "How did public debate become the primary engine of political revolution?"], "callout": "Shifts in public rhetoric reflect profound changes in societal values and beliefs."},
+{"title": "Theme 4: Allegory as Historical Lens", "standard": "11.1.6.3", "bullets": ["Discuss how Arthur Miller used 1692 Salem to critique 1950s Red Scare panic.", "Why is historical allegory uniquely effective at exposing contemporary corruption?", "Identify modern issues that could be critiqued through historical allegory today."], "callout": "Allegory allows writers to speak truth to power across different historical eras."},
+{"title": "Inner/Outer Circle Peer Coaching", "standard": "11.1.6.2", "bullets": ["Transition between the Inner Discussion Circle and the Outer Observation Circle.", "Outer circle partners track peer argument quality, text citations, and participation.", "Provide 2-minute peer feedback before swapping seminar circles."], "callout": "Peer observation fosters self-awareness and elevates the depth of academic debate."},
+{"title": "Connecting the First Five Weeks", "standard": "11.1.6.3", "bullets": ["Synthesize themes from Indigenous oral traditions through Colonial theology to Revolution.", "Trace how the concept of the 'American Voice' emerged across diverse genres.", "Evaluate how freedom of expression evolved into a core American ideal."], "callout": "The American voice developed through continuous dialogue, conflict, and synthesis."},
+{"title": "Synthesizing Student Conclusions", "standard": "11.1.6.2", "bullets": ["Summarize key insights generated during inner and outer circle discussions.", "Highlight recurring themes: moral agency, institutional power, and democratic debate.", "Acknowledge nuanced interpretations raised by seminar participants."], "callout": "Collaborative synthesis yields deeper understanding than isolated study."},
+{"title": "Reflecting on Seminar Contributions", "standard": "11.1.6.2", "bullets": ["Self-assess your seminar participation using the rating on the Checkpoint form.", "Identify one peer argument that changed or expanded your thinking today.", "Write down a final synthesis question generated by today's conversation."], "callout": "Self-reflection cements intellectual growth and prepares students for advanced writing."},
+{"title": "Unit 5 Cumulative Assessment Overview", "standard": "11.1.6.3", "bullets": ["Review instructions for the upcoming Unit 5 Synthesis Essay (see the Essay Planner in the Resource Hub).", "Incorporate findings from your Week 5 notes and seminar discussion notes.", "Ensure essay thesis statements draw clear links between Faith, Rhetoric, and Liberty."], "callout": "Your seminar dialogue provides the direct evidence needed for synthesis essay success."},
+{"title": "Final Reflection and Form Submission", "standard": "11.1.6.3", "bullets": ["Complete the final Day 23 checkpoint form on the Seminar Session.", "Submit your seminar notes and observation sheets.", "Congratulations on completing Week 5: The Voice of Revolution!"], "callout": "Mastery of historical literature enables critical participation in modern democracy."}
+], "resources": [
+{"title": "Seminar Toolkit: Sentence Starters, Question Stems, and Roles", "tag": "Generated study aid", "description": "Keep this open during the seminar. Use it to start a comment, ask a better question, or give peer feedback.", "html": "<table class='gen-table'><thead><tr><th>I want to...</th><th>Try saying...</th></tr></thead><tbody><tr><td>Back up a claim</td><td>'In the text, the author writes... This shows...'</td></tr><tr><td>Build on a peer</td><td>'I agree with ___ because... and I would add...'</td></tr><tr><td>Respectfully disagree</td><td>'I see it differently. The evidence I notice is... What do you think?'</td></tr><tr><td>Ask a deeper question</td><td>'What did the author want readers to feel or do? Why might that matter today?'</td></tr><tr><td>Bring in another text</td><td>'This connects to ___ because both texts...'</td></tr></tbody></table><ul class='gen-list'><li><strong>Inner Circle:</strong> discuss, cite the text, and respond to each other directly.</li><li><strong>Outer Circle:</strong> track evidence quality, note who builds on whom, and give 2-minute feedback.</li></ul>"},
+{"title": "Faith to Enlightenment Timeline", "tag": "Generated study aid", "description": "Key moments from Unit 5 in order. Use it to trace the journey from covenant and fear to consent and liberty.", "html": "<table class='gen-table'><thead><tr><th>Year</th><th>Event or text</th><th>Why it matters</th></tr></thead><tbody><tr><td>1620</td><td>Mayflower Compact</td><td>Settlers agree to form a self-governing community by mutual covenant.</td></tr><tr><td>1630</td><td>Winthrop's 'City Upon a Hill'</td><td>A covenant community is told the world is watching.</td></tr><tr><td>1692</td><td>Salem witch trials</td><td>Dogmatic authority and hysteria override fair process.</td></tr><tr><td>1741</td><td>Edwards, 'Sinners in the Hands of an Angry God'</td><td>Persuasion through spiritual fear.</td></tr><tr><td>1775</td><td>Henry, 'Give Me Liberty or Give Me Death'</td><td>Persuasion through logic and appeals to liberty.</td></tr><tr><td>1776</td><td>Declaration of Independence</td><td>Government draws its power from 'the consent of the governed.'</td></tr><tr><td>1787-1791</td><td>Constitution and Bill of Rights</td><td>Written limits on power and protections for individuals.</td></tr><tr><td>1953</td><td>Miller's The Crucible</td><td>Salem used as an allegory for the Red Scare.</td></tr></tbody></table>"},
+{"title": "Rhetoric Compared: Edwards vs. Henry", "tag": "Generated study aid", "description": "A side-by-side chart for the rhetoric discussion and checkpoint question 6.", "html": "<table class='gen-table'><thead><tr><th></th><th>Jonathan Edwards (1741)</th><th>Patrick Henry (1775)</th></tr></thead><tbody><tr><td>Audience</td><td>A congregation of believers</td><td>Delegates debating whether to resist Britain</td></tr><tr><td>Source of authority</td><td>God and scripture</td><td>Reason, experience, and natural liberty</td></tr><tr><td>Main appeal</td><td>Fear of judgment and a call to repent</td><td>Logic plus a call to courageous action</td></tr><tr><td>Memorable image</td><td>A spider held over a fire</td><td>'Give me liberty or give me death!'</td></tr><tr><td>Goal</td><td>Spiritual conversion</td><td>Political action</td></tr></tbody></table><p class='gen-note'>Question to consider: what changed in what audiences were willing to be persuaded by?</p>"},
+{"title": "From Covenant to Constitution: Idea Organizer", "tag": "Generated study aid", "description": "Trace how the idea of a binding agreement changed form across three founding texts.", "html": "<table class='gen-table'><thead><tr><th>Text</th><th>Key phrase</th><th>Who holds authority?</th></tr></thead><tbody><tr><td>Mayflower Compact (1620)</td><td>'covenant and combine ourselves together into a civil body politic'</td><td>The community, under God</td></tr><tr><td>Declaration of Independence (1776)</td><td>'deriving their just powers from the consent of the governed'</td><td>The people, by consent</td></tr><tr><td>Constitution (1787)</td><td>'We the People'</td><td>The people, through written law</td></tr></tbody></table><p class='gen-note'>Use this organizer to answer checkpoint question 3.</p>"},
+{"title": "Unit 5 Synthesis Essay Planner", "tag": "Generated study aid", "description": "A quick plan for the upcoming essay linking Faith, Rhetoric, and Liberty.", "html": "<ol class='gen-list'><li><strong>Claim:</strong> 'Between 1620 and 1791, American writers moved from ___ to ___, as shown by ___ and ___.'</li><li><strong>Evidence 1 (Faith):</strong> a text and quote showing religious authority or covenant.</li><li><strong>Evidence 2 (Rhetoric):</strong> a text and quote showing a change in persuasion.</li><li><strong>Evidence 3 (Liberty):</strong> a text and quote showing consent or protected rights.</li><li><strong>Connection:</strong> explain what the pattern shows about the American voice.</li><li><strong>Seminar link:</strong> include one idea from today's discussion that changed your thinking.</li></ol>"},
+{"title": "Standards 11.1.6.2 and 11.1.6.3 Mastery Guide", "tag": "Generated study aid", "description": "What each level looks like for the two self-assessments, with sentence starters for your evidence.", "html": "<ul class='gen-list'><li><strong>4 - Mastering:</strong> I explain the idea accurately, support it with specific evidence from two or more texts, and make a connection a classmate had not made.</li><li><strong>3 - Secure:</strong> I explain the idea and support it with at least one specific example.</li><li><strong>2 - Developing:</strong> I understand part of it but my example is general or missing.</li><li><strong>1 - Beginning:</strong> I need the idea explained again.</li></ul><p class='gen-note'>Sentence starters: 'Winthrop uses... while Henry uses...' / 'The shift from ___ to ___ shows...' / 'This connects to Unit 5 because...'</p>"},
+{"title": "Mayflower Compact (Avalon Project, Yale Law School)", "tag": "Primary source", "description": "A one-paragraph founding covenant. Notice the word 'covenant' and who the document says holds authority.", "url": "https://avalon.law.yale.edu/17th_century/mayflower.asp"},
+{"title": "Patrick Henry: Give Me Liberty or Give Me Death (Avalon Project)", "tag": "Primary source", "description": "The 1775 speech. Look for logic, questions, and appeals to liberty as you compare it with Edwards.", "url": "https://avalon.law.yale.edu/18th_century/patrick.asp"},
+{"title": "Selected Sermons of Jonathan Edwards (Project Gutenberg)", "tag": "Public domain reading", "description": "Includes 'Sinners in the Hands of an Angry God.' Search the page for the title and read the section describing God holding sinners over the fire.", "url": "https://www.gutenberg.org/ebooks/34632"},
+{"title": "Declaration of Independence: Transcription (National Archives)", "tag": "Founding document", "description": "Find the phrase 'consent of the governed' and connect it to the idea of a covenant.", "url": "https://www.archives.gov/founding-docs/declaration-transcript"},
+{"title": "The Bill of Rights: Full Text of Amendments 1-10 (National Archives)", "tag": "Founding document", "description": "Read the Fifth and Sixth Amendments, protections that answer the failures of trials like Salem's. Used in checkpoint question 7.", "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript"}
+], "form": [
+{"field_id": "q1", "label": "In a Socratic Seminar, which comment best 'speaks with evidence'?", "type": "multiple_choice", "help_text": "Choose one. A strong comment makes a claim, points to the text, and explains the connection.", "options": ["In Edwards's sermon, the image of a spider held over a fire shows he persuades through fear. That supports my claim that early rhetoric relied on spiritual fear.", "I just feel like the Puritans were too strict.", "Patrick Henry was better, so I agree with whoever spoke first.", "I did not read it, but the answer is probably 'covenant.'"], "correct_answer": "In Edwards's sermon, the image of a spider held over a fire shows he persuades through fear. That supports my claim that early rhetoric relied on spiritual fear."},
+{"field_id": "q2", "label": "Match each Unit 5 text or author to the idea it best represents.", "type": "matching", "pairs": [{"term": "John Winthrop, 'City Upon a Hill'"}, {"term": "Jonathan Edwards, 'Sinners in the Hands of an Angry God'"}, {"term": "Patrick Henry, 'Give Me Liberty or Give Me Death'"}, {"term": "Arthur Miller, The Crucible"}], "choices": ["A covenant community with the world watching", "Persuasion through vivid images of spiritual fear", "Persuasion through logic and an appeal to liberty", "A historical setting used to critique 1950s political panic"], "answers": ["A covenant community with the world watching", "Persuasion through vivid images of spiritual fear", "Persuasion through logic and an appeal to liberty", "A historical setting used to critique 1950s political panic"]},
+{"field_id": "q3", "label": "How did Puritan 'covenants' influence later democratic ideas?", "type": "short_answer", "prompt": "Explain the connection between Puritan religious covenants and democratic social contracts.", "help_text": "Write 2-3 sentences. Try: 'A covenant is... A social contract is... The connection is...' The Idea Organizer in the Resource Hub can help.", "correct_answer": "Puritan covenants established community agreements binding members together, prefiguring democratic constitutions based on social contracts."},
+{"field_id": "q4", "label": "True or False: The goal of a Socratic Seminar is to win an argument against your classmates.", "type": "true_false", "explain_prompt": "Explain your answer in one sentence: what is the real goal of a Socratic Seminar?", "correct_answer": "False"},
+{"field_id": "q5", "label": "Which actions help a Socratic Seminar succeed?", "type": "checkbox", "options": ["Quoting or citing the text to back up a claim", "Restating a peer's idea before adding to it or challenging it", "Outer Circle partners tracking evidence quality and giving 2-minute feedback", "Interrupting so your point is heard first", "Looking for the one 'right answer' as fast as possible"], "correct_answers": ["Quoting or citing the text to back up a claim", "Restating a peer's idea before adding to it or challenging it", "Outer Circle partners tracking evidence quality and giving 2-minute feedback"]},
+{"field_id": "q6", "label": "How did public rhetoric change from Jonathan Edwards to Patrick Henry?", "type": "quote_citation", "help_text": "Write a paragraph. Use one detail or short quotation from each speaker. Try: 'Edwards persuades by... while Henry persuades by... This shift shows...' The Rhetoric Compared chart can help.", "correct_answer": "Rhetoric shifted from spiritual fear and divine obedience in sermons to logical argument, natural rights, and civic liberty in revolutionary speeches."},
+{"field_id": "q7", "label": "Name one constitutional protection that guards against a Salem-style trial, and explain how it does.", "type": "short_answer", "help_text": "Think about forced confessions, unfair accusations, or the right to question accusers. The Bill of Rights link in the Resource Hub has the full text.", "correct_answer": "The Fifth Amendment protects against forced self-incrimination and guarantees due process; the Sixth guarantees a fair trial and the right to confront witnesses."},
+{"field_id": "q8", "label": "Standard 11.1.6.2 Self-Assessment: Can you compare authors' choices and structures across texts?", "type": "self_assessment", "standard": "11.1.6.2", "standard_title": "Structural Parallels and Authorial Intent", "i_can": "I can compare how different authors and speakers shape their texts to achieve a purpose, and explain what those choices reveal about their time.", "look_fors": ["I can name two Unit 5 texts and what each author is trying to do.", "I can point to a specific choice (image, structure, tone) in each.", "I can explain what the comparison shows about how American writing changed."], "levels": [{"value": "4", "title": "4 - Mastering", "desc": "I can compare texts with specific evidence and make a new connection across the unit."}, {"value": "3", "title": "3 - Secure", "desc": "I can compare two texts and support it with an example."}, {"value": "2", "title": "2 - Developing", "desc": "I can describe each text but struggle to compare them."}, {"value": "1", "title": "1 - Beginning", "desc": "I need this explained again."}], "prompt": "Show your evidence: Pick two Unit 5 texts. What is each author's purpose, and how do their choices differ?", "evidence_hint": "Pick your level first, then back it up in 2-4 sentences. See the Mastery Guide in the Resource Hub."},
+{"field_id": "q9", "label": "Rate your seminar participation today: how well did you speak with evidence and listen actively?", "type": "rating_scale", "options": ["1", "2", "3", "4", "5"], "scale_low": "1 = I mostly stayed quiet or off-topic", "scale_high": "5 = I cited text, built on peers, and listened closely", "explain_prompt": "Name one thing you did well and one thing you will improve in the next seminar.", "correct_answer": "Self-rating, no single correct answer."},
+{"field_id": "q10", "label": "Standard 11.1.6.3 Self-Assessment: Can you connect literature to its historical context and ideas?", "type": "self_assessment", "standard": "11.1.6.3", "standard_title": "History as a Mirror", "i_can": "I can use historical context to explain how American literature reflects and responds to the ideas of its time, and trace Unit 5's journey from Puritan faith to democratic reason.", "look_fors": ["I can name where Unit 5 starts (faith-based authority) and where it ends (consent and liberty).", "I can name at least one turning point, such as Salem or the Revolution.", "I can use a specific text to show how history shaped the writing."], "levels": [{"value": "4", "title": "4 - Mastering", "desc": "I can tell the whole story with specific texts and connect it to today."}, {"value": "3", "title": "3 - Secure", "desc": "I can tell the story of Unit 5 with at least one specific example."}, {"value": "2", "title": "2 - Developing", "desc": "I know some pieces but not how they connect."}, {"value": "1", "title": "1 - Beginning", "desc": "I need this explained again."}], "prompt": "Show your evidence: Summarize the conceptual journey of Unit 5: The Voice of Revolution.", "evidence_hint": "Use 3-4 sentences: where it started, a turning point, and where it ended. The Timeline in the Resource Hub can help.", "correct_answer": "Unit 5 traces the evolution of the American voice from dogmatic religious panic toward reasoned, democratic debate and individual freedom."}
+]}));
+</script>
+</body>
+</html>
